@@ -22,6 +22,12 @@ h1, h2, h3, p {
   color: #222;
 }
 
+.back-button {
+  font-size: xx-large;
+  border: none;
+  background-color: transparent;
+}
+
 .btn:focus {
   outline: none;
 }

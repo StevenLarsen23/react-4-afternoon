@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
+import {Link} from 'react-router-dom'
 
 export default class Student extends Component {
   constructor(props) {
@@ -23,6 +24,7 @@ export default class Student extends Component {
   render() {
     return (
       <div className="box">
+        <button className='back-button' onClick={this.props.history.goBack}>&#8656;</button>
         <h1>Student</h1>
     <h1>{this.state.studentInfo.first_name} {this.state.studentInfo.last_name}</h1>
     <h3>Grade: {this.state.studentInfo.grade}</h3>
